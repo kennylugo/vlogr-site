@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+
+<head>
+	<style type="text/css">
+
+		* {
+			font-family: "Montserrat", sans-serif;
+			color: white;
+		}
+
+		html {
+
+			background-image: url("./background.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			background-color: black;
+
+		}
+
+
+		body {
+			/*position: absolute;*/
+			padding: 0;
+			margin: 0;
+		}
+
+
+
+		.container {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+		}
+
+/*Right Column*/
+		.screenshotsImage {
+			
+			/*Position*/
+			position: absolute;
+			top: 7vh;
+			left: 55vw;
+
+			/*Dimensions*/
+			height: 70%;
+			width: 28%;
+
+		}
+
+/*Left Column */
+		.downloadImage {
+
+			width: 150px;
+			height: 45px;
+		}
+
+		.leftColumn {
+			position: absolute;
+			top: 15vh;
+			left: 11vw;
+
+			height: 60vh;
+			width: 30vw;
+		}
+
+		.productName {
+			font-size: 4em;
+			font-weight: bold;
+		}
+
+		.sell {
+			font-size: 1.1em;
+
+		}
+
+
+
+
+/*Media Queries*/
+		/*iphone*/
+		@media (max-width: 600px){
+			.leftColumn {
+				width: 80vw;
+				position: relative;
+				left: 15%;
+			}
+
+			.screenshotsImage {
+				display: none;
+			}
+
+			img {
+				position: relative;
+				left: 50px;
+			}
+
+			h1 {
+				position: relative;
+				left: 40px;
+
+
+				color: white;
+			}
+		}
+
+
+		@media (max-width: 800px){
+	
+
+			.screenshotsImage {
+				height: 60%;
+				width: 35%;
+			}
+
+		}
+
+		/*iPhone 6 Plus*/
+		@media (max-width: 414px) {
+
+			.leftColumn {
+				position: relative;
+				top: 290px;
+
+				margin: 0;
+			}
+
+			.productName {
+				width: 100%;
+				position: relative;
+				left: 60px;
+			}
+
+			.downloadImage {
+				position: relative;
+				left: 70px;
+			}
+
+			.screenshotsImage {
+				display: block;
+
+				width: 180px;
+				height: 220px;
+
+				position: absolute;
+				left: 130px;
+			}
+
+		}	
+
+
+			/*iPhone 6*/
+			@media (max-width: 375px) {
+				.screenshotsImage {
+					position: absolute;
+					left: 100px;
+				}
+
+				.sell {
+					position: relative;
+					left: 15px;
+				}
+
+				.productName {
+					position: relative;
+					left: 50px;
+				}
+
+				.downloadImage {
+					position: relative;
+					left: 50px;
+				}
+
+
+				.leftColumn {
+					position: relative;
+					top: 270px;
+
+					margin: 0;
+				}
+		}
+
+
+		@media (max-width: 320px;) {
+				.screenshotsImage {
+						position: absolute;
+						left: 79px;
+					}
+
+				.sell {
+					position: relative;
+					left: 28px;
+				}
+			}
+
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+			<div class="leftColumn">
+				<h1 class="productName">Vlogr</h1>
+				<p class="sell">Wether you are in the western or eastern hemisphere, Vlogr allows you to reach the entire world by spreading your voice worldwide without any restrictions.</p>
+				<img class="downloadImage" src="./AppStore.png">
+			</div>
+			
+			<div class="rightColumn">
+				<img class="screenshotsImage" src="./screenshots.png">
+			</div>
+			
+	</div>
+</body>
